@@ -8,7 +8,7 @@ function TablaGame() {
 var TGP = TablaGame.prototype;
 
 TGP.insert = function() {
-    document.getElementById('js_game-table').innerHTML = '<h1>TABLA!</h1>';
+    document.getElementsByTagName('body')[0].innerHTML = '<div id="js_table"></div>';
 };
 
 
