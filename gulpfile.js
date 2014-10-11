@@ -3,15 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('jslint', function() {
     return gulp.src('client/js/*.js')
-            .pipe(jslint({
-                node: true,
-                evil: true,
-                nomen: true,
-                errorsOnly: false
-            }))
-            .on('error', function(error) {
-                console.error(String(error));
-            });
+            .pipe(jslint());
 });
 
 gulp.task('watch', function() {
@@ -19,3 +11,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['watch']);
+
