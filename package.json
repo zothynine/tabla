@@ -1,0 +1,23 @@
+{
+  "name": "tabla",
+  "version": "0.0.0",
+  "description": "Online Game",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zothynine/tabla.git"
+  },
+  "author": "Mario Zoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zothynine/tabla/issues"
+  },
+  "homepage": "https://github.com/zothynine/tabla",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-jslint": "^0.1.7"
+  }
+}

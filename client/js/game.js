@@ -1,3 +1,4 @@
-TABLA = {
+var TABLA = {
 
 };
+
