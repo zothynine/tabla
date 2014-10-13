@@ -5,10 +5,11 @@ gulp.task('jslint', function() {
     return gulp.src('client/js/*.js')
             .pipe(jslint({
                 reporter: function(evt) {
-                    //console.log(evt.errors);
+                    console.log('\n');
                     for (var i = 0; i < evt.errors.length; i++) {
-                        console.error(evt.errors[i].line+':'+evt.errors[i].character, evt.errors[i].reason, evt.errors[i].evidence);
+                        console.error((evt.errors[i].line+':'+evt.errors[i].character).red, (evt.errors[i].reason).red, (evt.errors[i].evidence).red);
                     }
+                    console.log('\n');
                 }
             }));
 });
