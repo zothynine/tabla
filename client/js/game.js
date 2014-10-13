@@ -1,4 +1,3 @@
-var TABLA = {
-
-};
+TABLA = {};
+TABLA2 = {};
 

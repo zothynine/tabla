@@ -3,7 +3,14 @@ var gulp = require('gulp'),
 
 gulp.task('jslint', function() {
     return gulp.src('client/js/*.js')
-            .pipe(jslint());
+            .pipe(jslint({
+                reporter: function(evt) {
+                    //console.log(evt.errors);
+                    for (var i = 0; i < evt.errors.length; i++) {
+                        console.error(evt.errors[i].line+':'+evt.errors[i].character, evt.errors[i].reason, evt.errors[i].evidence);
+                    }
+                }
+            }));
 });
 
 gulp.task('watch', function() {
