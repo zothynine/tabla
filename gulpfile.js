@@ -6,10 +6,15 @@ gulp.task('jslint', function() {
             .pipe(jslint({
                 reporter: function(evt) {
                     console.log('\n');
-                    for (var i = 0; i < evt.errors.length; i++) {
-                        console.error((evt.errors[i].line+':'+evt.errors[i].character).red, (evt.errors[i].reason).red, (evt.errors[i].evidence).red);
+                    if (evt.pass) {
+                        console.log(('JSLINT: NO ERRORS FOUND').green);
+                    } else {
+                        console.log(('JSLINT ERRORS:'.red));
+                        for (var i = 0; i < evt.errors.length; i++) {
+                            console.error((evt.errors[i].line+':'+evt.errors[i].character).red, (evt.errors[i].reason).red);
+                        }
+                        console.log('\n');
                     }
-                    console.log('\n');
                 }
             }));
 });
