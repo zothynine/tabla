@@ -1,0 +1,117 @@
+Tablić, Tabinet
+
+This page is based partly on information from Thanos Tsakonas, Miroslav Miljkovic, Matthew Macfadyen and Mirko Cristescu.
+
+Introduction
+Players and Cards
+Deal
+Play
+Scoring
+Ending the Game
+Variations
+Tabinet
+Other Tablić Web Pages and Software
+Introduction
+
+Tablić is a fishing game played in Serbia and other countries of the former Yugoslavia. The Serbian game is described first, followed by the differences in other countries so far as I know them. The almost identical Romanian game Tabinet is also described on this page.
+
+As in most games of this type, the aim is to capture cards from a layout on the table by playing matching a card from hand. Captured cards cards are accumulated in a pile to be counted at the end of the round to determine the score.
+
+Players and Cards
+
+Tablić is played with a standard 52-card deck without jokers. For the purpose of capture the cards have values: king=14, queen=13, jack=12, ace=1 or 11 at the choice of the player, other cards face value. The suits have no significance in this game, except that the diamond10 and club2 are worth extra points in the scoring.
+
+There are normally either two players, or for four players in fixed partnerships, partners sitting opposite each other. A three-player game is also possible, but less usual. In Serbia the deal and play are counter-clockwise.
+
+Deal
+
+The first dealer is chosen by drawing cards from the shuffled pack. Before cards a drawn, some player must announce whether the dealer will be the player who draws the highest value card (ace counting as 11) or the lowest value card (ace counting as 1).
+
+The dealer shuffles and the player to dealer's left cuts and places the bottom four cards of the lifted section of the pack face up on the table as an initial layout, known in this game as the talon: these cards are placed separately so that all are visible. The cutter then turns the lifted part of the deck so that everyone can see its bottom card. This will become the bottom card of the deck, and will be received by the dealer in the final phase of the deal. The dealer completes the cut and then deals the cards in batches of three, going around the table twice so that each player has a hand of six cards. The remainder of the pack is temporarily put aside face down. After all players have played their cards, the same dealer will deal another six cards each in the same way, and play will continue until all the cards have been dealt and played.
+
+Instead of cutting, the player to dealer's left may refuse to cut, simply tapping the top of the deck. In this case the dealer simply shows the bottom card of the deck, deals six cards each, and then deals four cards face up from the top of the deck to form the talon, so that play can begin. When these cards have been played the dealer deals six more cards each as usual, without dealing any further cards face up.
+
+After all cards have been played and the result has been scored, the turn to deal passes to the right.
+
+When there are only three players, the final part of the deal will be just four cards to each player rather six (4 + 3×6 + 3×6 + 3×4 = 52).
+
+Play
+
+The player to dealer's right plays first, and the play continues anticlockwise.
+
+At your turn you play one card face up on the table. If its value is equal to a card or a set of cards in the layout, you may capture any such cards or sets. No card can belong to more than one captured set at the same time. For example with 2, 3, 4, 7 on the table, a 9 can capture 2+3+4 or 2+7 but not both these sets at once, since the 2 can only belong to one of them. You take the captured cards, along with the card you played, and store them face down in your pile of captured cards. (In a four-player partnership game there is just one pile of captured cards for each team.)
+
+If the played card does not match any card or sum of cards, it is simply left face up on the table as an extra card of the layout, which may be captured in a future play. Irrespective of whether the played card captured anything or not, it is then the next player's turn to play.
+
+Example: the cards on the table are A, 3, 6, 7, 8, Q.
+
+If you play a 6, you can only capture the 6.
+If you play a 9 you can capture (A+8) + (3+6).
+If you play a 10 you can capture 7+3.
+If you play a King (14) you could capture A+6+7, or (A+Q) + (6+8), or (A+3) + (6+8) (counting the Ace as 11).
+If you play a 5 it captures nothing and remains face up on the table.
+When playing a card, you are not obliged to capture everything that you can. You may capture just some of the matching cards or sets, or nothing at all. For example, in a partnership game your partner plays a 10 and the next player does not take it. On your turn, if you suspect that your partner has a second 10, you can play your 10 and not capture, leaving both tens on the table for your partner.
+
+Capturing all the cards on the table, leaving it empty, is called a 'tabla' and is worth an extra point in the final scoring.
+
+When everyone has played their cards, if there are cards remaining in the deck, the dealer deals more cards as described above, and whatever was on the table remains there to be captured. When all cards have been played and the deck is empty, all cards remaining on the table are taken by the dealer's team and added to their captures. It is not possible for the dealer's team to score a tabla with this final card, even if it can actually capture all the cards remaining on the table by matching cards or sets.
+
+Scoring
+
+At the end of the play, each player or team scores for captured cards as follows:
+
+Each Ace, King, Queen or Jack: 1 point
+10 of diamonds: 2 points
+Other tens: 1 point
+2 of clubs: 1 point
+The player or team with most cards: 3 points
+That makes a total of 25 points.
+
+In addition, 1 point is added for each tabla. Tablas may be recorded as they occur by tally marks at the side of the score sheet so that they can be correctly remembered and added in when the cards are counted.
+
+If there is a tie for most cards, no one gets the 3 points, so the total is just 22 points plus tablas.
+
+The points are recorded on the score sheet, and all the cards are gathered and passed to the next dealer to shuffle and deal.
+
+Ending the Game
+
+The object of the game is to achieve a score of 101 points or more.
+
+In the simplest form of the game, the players simply total their points after each hand. If any player or team has more than 101, then whoever has the highest score wins. If there is a tie - for example both teams have 103 points - then another hand is played to decide who wins. In this version it is not possible to stop the game during the play - every hand is played to the end.
+
+Claiming Victory
+
+However, many people play with the rule that a player or team that has 101 points can immediately claim a victory. This announcement can be made in the middle of the play, for example as soon as the winning player or team captures enough scoring cards to take them over 101. It is not possible to include the 3 points for "most cards" when making a claim during the play: these points can only be scored at the end of a hand when all cards have been played.
+
+When a win is claimed, it does not matter how many points the opponents have scored. If the claim is correct, the announcing team wins even if the opponent in fact had more points but failed to claim. On the other hand, a player who claims to have won but turns out to have fewer than 101 points automatically loses.
+
+There are several variants on the way tablas are treated when claiming a victory. Usually the scores are totalled after six hands have been played to check whether there is already a winner. Since at this point the scores will add up to only 150 plus any tablas that have been scored (unless there has been a tie for cards), it is likely that no one will have more than 100. For the seventh and subsequent hands there are three possibilities:
+
+The seventh and subsequent deals are played without scoring for tablas.
+In the seventh and subsequent deals, tablas are not counted in the scores until the end of the hand - so a player claiming a victory during the play cannot include tablas.
+In the seventh and subsequent deals, tablas can only be scored by a player or team whose score at the start of the hand was less than 90 points, and their score for tablas is limited to the difference of their score from 90. For example if your score at the start of a hand is 88, you cannot score more than two tablas.
+Note. With method 2, it may be that the final scoring of a hand when the 3 points for most cards and tablas are added takes both teams to 101 or more. In this case, presumably the player or team with more points wins, or if the scores are equal a further hand is played to decide the winner.
+
+Variations
+
+Matthew Macfadyen was taught a three-player version of Tablić by Mirko Rupel of Ljubljana. This game is played with a pack of only 40 cards (no kings, queens or jacks). The dealer deals just four cards to each player and puts four cards face up on the table. When everyone has played their first four cards, another four each are dealt, and finally another four when these have been played. There is one point for the last player who makes a capture, so the total number of points per hand is only 11 plus tablas. It may be that this is the usual way to play in Slovenia. It was said that the game could also be played by two or four people, four playing as individuals, not partners, but in this case it would be necessary to adjust the deal. With two players one could have three deals of six each; with four players perhaps a deal of five followed by a deal of four.
+
+I have been told that Tablić is also played in Croatia, Bosnia and Herzegovina, Montenegro and FYR of Macedonia. Melissa Andrade reports that in Macedonia the rules are the same as in Serbia and that a tabla is there called a peeshee (? - spelling uncertain), and that this is also the name of the game. I have no specific information about the variants played in the other Balkan countries and I hope that some players from these countries will let me know so that I can add specific details here.
+
+Tabinet
+
+The equivalent Romanian game is called Tabinet. It is played essentially the same way as Serbian Tablić. With four players, six cards are dealt to each player and four to the table, with a further deal of six cards each after the first six are played. With two players there are two further deals of six cards each. Some play that the first player (to the right of the dealer) can reject the first six cards and ask to be dealt a new hand of six cards, which cannot be refused.
+
+Deal and play are anticlockwise, as in Serbia, with no opportunity to claim a win before all the cards have been played. Tablas can be claimed and scored throughout the game (except that as usual the dealer cannot score a tabla with the final card when the deck is empty).
+
+Other Tablić Web Pages and Software
+
+A Tablić / Tablanet computer program is available from Thanos Cardgames.
+
+Rules in Serbian are available on the ADUT forum (registration required).
+
+Multiplayer online Tablić games are available at igrajmo.se and zoki.com.
+
+The site igrajkarte.com has rules of Tablić and also a page from which two Tablić programs can be downloaded.
+
+Home Page > Classified Index > Fishing Games > Tablić, Tabinet
