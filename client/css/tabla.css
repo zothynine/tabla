@@ -3,6 +3,10 @@
 	--tint: #333;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background-color: var(--tablebg);
 	color: var(--tint);
