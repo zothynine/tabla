@@ -2,31 +2,249 @@
 <html lang="de">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<title>Tabla!</title>
-	<link rel="stylesheet" href="css/tabla.css"
+	<link rel="stylesheet" href="css/tabla.css">
+	<link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
 	<!-- CARDS SPRITE -->
-	<svg class="sprite-cards" version="1.1" viewbox="0 0 30 45" xmlns="http://www.w3.org/2000/svg"
+	<svg class="cards-sprite" version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-		<symbol id="h3">
-			<rect class="card" />
-			<text x="5" y="15">H3</text>
+		<style>
+			rect {
+				width: 100%;
+				height: 100%;
+				fill: white;
+			}
+
+			text { fill: #333; }
+
+			[id^="h-"] text,
+			[id^="d-"] text { fill: #900; }
+		</style>
+		<symbol id="s-2">
+			<rect/>
+			<text x="5" y="15">&#9824;2</text>
 		</symbol>
-		<symbol id="h4">
-			<rect class="card" />
-			<text x="5" y="15">H4</text>
+		<symbol id="s-3">
+			<rect/>
+		 	<text x="5" y="15">&#9824;3</text>
+		 </symbol>
+		<symbol id="s-4">
+			<rect/>
+			<text x="5" y="15">&#9824;4</text>
+		</symbol>
+		<symbol id="s-5">
+			<rect/>
+			<text x="5" y="15">&#9824;5</text>
+		</symbol>
+		<symbol id="s-6">
+			<rect/>
+			<text x="5" y="15">&#9824;6</text>
+		</symbol>
+		<symbol id="s-7">
+			<rect/>
+			<text x="5" y="15">&#9824;7</text>
+		</symbol>
+		<symbol id="s-8">
+			<rect/>
+			<text x="5" y="15">&#9824;8</text>
+		</symbol>
+		<symbol id="s-9">
+			<rect/>
+			<text x="5" y="15">&#9824;9</text>
+		</symbol>
+		<symbol id="s-10">
+			<rect/>
+			<text x="5" y="15">&#9824;10</text>
+		</symbol>
+		<symbol id="s-j">
+			<rect/>
+			<text x="5" y="15">&#9824;J</text>
+		</symbol>
+		<symbol id="s-q">
+			<rect/>
+			<text x="5" y="15">&#9824;Q</text>
+		</symbol>
+		<symbol id="s-k">
+			<rect/>
+			<text x="5" y="15">&#9824;K</text>
+		</symbol>
+		<symbol id="s-a">
+			<rect/>
+			<text x="5" y="15">&#9824;A</text>
+		</symbol>
+		<symbol id="c-2">
+			<rect/>
+			<text x="5" y="15">&#9827;2</text>
+		</symbol>
+		<symbol id="c-3">
+			<rect/>
+			<text x="5" y="15">&#9827;3</text>
+		</symbol>
+		<symbol id="c-4">
+			<rect/>
+			<text x="5" y="15">&#9827;4</text>
+		</symbol>
+		<symbol id="c-5">
+			<rect/>
+			<text x="5" y="15">&#9827;5</text>
+		</symbol>
+		<symbol id="c-6">
+			<rect/>
+			<text x="5" y="15">&#9827;6</text>
+		</symbol>
+		<symbol id="c-7">
+			<rect/>
+			<text x="5" y="15">&#9827;7</text>
+		</symbol>
+		<symbol id="c-8">
+			<rect/>
+			<text x="5" y="15">&#9827;8</text>
+		</symbol>
+		<symbol id="c-9">
+			<rect/>
+			<text x="5" y="15">&#9827;9</text>
+		</symbol>
+		<symbol id="c-10">
+			<rect/>
+			<text x="5" y="15">&#9827;10</text>
+		</symbol>
+		<symbol id="c-j">
+			<rect/>
+			<text x="5" y="15">&#9827;J</text>
+		</symbol>
+		<symbol id="c-q">
+			<rect/>
+			<text x="5" y="15">&#9827;Q</text>
+		</symbol>
+		<symbol id="c-k">
+			<rect/>
+			<text x="5" y="15">&#9827;K</text>
+		</symbol>
+		<symbol id="c-a">
+			<rect/>
+			<text x="5" y="15">&#9827;A</text>
+		</symbol>
+		<symbol id="h-2">
+			<rect/>
+			<text x="5" y="15">&#9829;2</text>
+		</symbol>
+		<symbol id="h-3">
+			<rect/>
+			<text x="5" y="15">&#9829;3</text>
+		</symbol>
+		<symbol id="h-4">
+			<rect/>
+			<text x="5" y="15">&#9829;4</text>
+		</symbol>
+		<symbol id="h-5">
+			<rect/>
+			<text x="5" y="15">&#9829;5</text>
+		</symbol>
+		<symbol id="h-6">
+			<rect/>
+			<text x="5" y="15">&#9829;6</text>
+		</symbol>
+		<symbol id="h-7">
+			<rect/>
+			<text x="5" y="15">&#9829;7</text>
+		</symbol>
+		<symbol id="h-8">
+			<rect/>
+			<text x="5" y="15">&#9829;8</text>
+		</symbol>
+		<symbol id="h-9">
+			<rect/>
+			<text x="5" y="15">&#9829;9</text>
+		</symbol>
+		<symbol id="h-10">
+			<rect/>
+			<text x="5" y="15">&#9829;10</text>
+		</symbol>
+		<symbol id="h-j">
+			<rect/>
+			<text x="5" y="15">&#9829;J</text>
+		</symbol>
+		<symbol id="h-q">
+			<rect/>
+			<text x="5" y="15">&#9829;Q</text>
+		</symbol>
+		<symbol id="h-k">
+			<rect/>
+			<text x="5" y="15">&#9829;K</text>
+		</symbol>
+		<symbol id="h-a">
+			<rect/>
+			<text x="5" y="15">&#9829;A</text>
+		</symbol>
+		<symbol id="d-2">
+			<rect/>
+			<text x="5" y="15">&#9830;2</text>
+		</symbol>
+		<symbol id="d-3">
+			<rect/>
+			<text x="5" y="15">&#9830;3</text>
+		</symbol>
+		<symbol id="d-4">
+			<rect/>
+			<text x="5" y="15">&#9830;4</text>
+		</symbol>
+		<symbol id="d-5">
+			<rect/>
+			<text x="5" y="15">&#9830;5</text>
+		</symbol>
+		<symbol id="d-6">
+			<rect/>
+			<text x="5" y="15">&#9830;6</text>
+		</symbol>
+		<symbol id="d-7">
+			<rect/>
+			<text x="5" y="15">&#9830;7</text>
+		</symbol>
+		<symbol id="d-8">
+			<rect/>
+			<text x="5" y="15">&#9830;8</text>
+		</symbol>
+		<symbol id="d-9">
+			<rect/>
+			<text x="5" y="15">&#9830;9</text>
+		</symbol>
+		<symbol id="d-10">
+			<rect/>
+			<text x="5" y="15">&#9830;10</text>
+		</symbol>
+		<symbol id="d-j">
+			<rect/>
+			<text x="5" y="15">&#9830;J</text>
+		</symbol>
+		<symbol id="d-q">
+			<rect/>
+			<text x="5" y="15">&#9830;Q</text>
+		</symbol>
+		<symbol id="d-k">
+			<rect/>
+			<text x="5" y="15">&#9830;K</text>
+		</symbol>
+		<symbol id="d-a">
+			<rect/>
+			<text x="5" y="15">&#9830;A</text>
 		</symbol>
 	</svg>
-	
-	
-	<svg class="card">
-		<use xlink:href="#h3" />
-	</svg>	
-	<svg class="card">
-		<use xlink:href="#h4" />
-	</svg>
-	
-	
+
+	<div class="card" id="ha">
+		<svg viewbox="0 0 30 45">
+			<use xlink:href="#h-a" />
+		</svg>
+	</div>
+	<div class="card" id="s4">
+		<svg viewbox="0 0 30 45">
+			<use xlink:href="#s-4" />
+		</svg>
+	</div>
+
+	<script src="js/tabla.js" async></script>
+
 </body>
 </html>

@@ -1,26 +1,13 @@
 :root {
 	--tablebg: #006600;
-	--cardbg: #eee;
-	--tint: #333;
 }
 
 body {
 	background-color: var(--tablebg);
 	color: var(--tint);
+	margin: 0;
+	padding: 0;
 }
-
-.sprite-cards {
+.cards-sprite {
 	display: none;
-}
-
-.sprite-cards .card {
-	x: 0;
-	y: 0;
-	stroke: var(--tint);
-	fill: var(--cardbg);
-}
-
-.card {
-	width: 30px;
-	height: 45px;	
 }
