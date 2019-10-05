@@ -1,0 +1,18 @@
+.card {
+    /* --width: 3rem; */
+    --width: calc(4rem + 3vw);
+	width: var(--width);
+    height: calc(var(--width) * 1.3333333333);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.card svg {
+    fill: transparent;
+}
