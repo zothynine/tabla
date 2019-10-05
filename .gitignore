@@ -3,5 +3,4 @@ sass-cache/
 *.swp
 *.swo
 node_modules
-*.css
 *.map
