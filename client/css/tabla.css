@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.cards-sprite {
+
+[id='cards-sprite'] {
 	display: none;
 }

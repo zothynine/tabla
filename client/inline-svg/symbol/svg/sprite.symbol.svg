@@ -1,4 +1,3 @@
-const deck = `
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <style>
@@ -343,8 +342,3 @@ const deck = `
         <path d="M22.191 72.318h7.872V56.504l9.118-9.581 14.14 25.395h9.332l-18.379-31.45 16.634-20.481h-9.332L30.205 47.136h-.142V20.387h-7.872v51.931zM278.309 328.457h-7.871v15.814l-9.119 9.581-14.14-25.395h-9.332l18.379 31.45-16.633 20.48h9.331l21.371-26.748h.143v26.748h7.871v-51.93z" fill-rule="nonzero"/>
     </symbol>
 </svg>
-`;
-
-export function get() {
-    return deck;
-}

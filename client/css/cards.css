@@ -16,9 +16,9 @@
     border-color: #fff transparent transparent #fff;
 }
 
-.card + .card {
+/* .card + .card {
     transform: translate(20px,-80px);
-}
+} */
 
 .card svg {
     fill: transparent;

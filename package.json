@@ -1,0 +1,30 @@
+{
+  "name": "tabla",
+  "version": "1.0.0",
+  "description": "tabla =====",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zothynine/tabla.git"
+  },
+  "author": "Mario Zoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/zothynine/tabla/issues"
+  },
+  "homepage": "https://gitlab.com/zothynine/tabla#readme"
+}
