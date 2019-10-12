@@ -1,6 +1,13 @@
+import { get as getSVGSprite } from "./cards-svg-sprite.js";
+
 document.addEventListener("DOMContentLoaded", event => {
-    console.log("DOM LOADED.");
+
+    const cardsSprite = getSVGSprite();
     const cards = document.querySelectorAll(".card");
+
+    if (cardsSprite) {
+        document.getElementById("cards-sprite").insertAdjacentHTML("afterbegin", cardsSprite);
+    }
 
     function handleCardClickOrTab(event) {
         const card = (event.target.nodeName.toLowerCase() === "div") ? event.target : event.target.closest("div");
