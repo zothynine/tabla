@@ -1,22 +1,35 @@
-import { get as getSVGSprite } from "./cards-svg-sprite.js";
+import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-document.addEventListener("DOMContentLoaded", event => {
+function makeCards(sprite) {
 
-    const cardsSprite = getSVGSprite();
-    const cards = document.querySelectorAll(".card");
-
-    if (cardsSprite) {
-        document.getElementById("cards-sprite").insertAdjacentHTML("afterbegin", cardsSprite);
+    const _SPRITE = sprite || null
+    if (!_SPRITE) {
+        console.error('no cards sprite loaded')
+        return
     }
 
-    function handleCardClickOrTab(event) {
-        const card = (event.target.nodeName.toLowerCase() === "div") ? event.target : event.target.closest("div");
-        const id = card.getAttribute("id") || "???";
-        console.log(`You just clicked the card ${id}`);
-    }
+    const CARDS = _SPRITE.querySelectorAll('symbol')
+    CARDS.forEach(card => {
+        const _ID = card.getAttribute('id').toLowerCase()
 
-    cards.forEach(card => {
-        card.addEventListener("mouseup", handleCardClickOrTab, true);
-        card.addEventListener("touchend", handleCardClickOrTab, true);
-    });
-});
+        if (_ID !== 'back') {
+            _SPRITE.insertAdjacentHTML('afterend', `
+            <div class="card" id="${_ID.replace('-','')}">
+                <svg viewbox="0 0 300 400">
+                    <use xlink:href="#${_ID}" />
+                    <use xlink:href="#back" />
+                </svg>
+            </div>
+            `)
+        }
+    })
+}
+
+window.addEventListener('message', event => {
+
+    if (event.data === 'cardSpriteReady') {
+        const _SPRITE = document.getElementById('cards-sprite')
+        _SPRITE.insertAdjacentHTML('afterbegin', getSVGSprite())
+        makeCards(_SPRITE)
+    }
+}, false)
