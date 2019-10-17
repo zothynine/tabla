@@ -8,20 +8,19 @@ function makeCards(sprite) {
         return
     }
 
-    const CARDS = _SPRITE.querySelectorAll('symbol')
+    const CARDS = _SPRITE.querySelectorAll('svg > symbol[id*="-"]')
     CARDS.forEach(card => {
+
         const _ID = card.getAttribute('id').toLowerCase()
 
-        if (_ID !== 'back') {
-            _SPRITE.insertAdjacentHTML('afterend', `
-            <div class="card" id="${_ID.replace('-','')}">
-                <svg viewbox="0 0 300 400">
-                    <use xlink:href="#${_ID}" />
-                    <use xlink:href="#back" />
-                </svg>
-            </div>
-            `)
-        }
+        _SPRITE.insertAdjacentHTML('afterend', `
+        <div class="card" id="${_ID.replace('-','')}">
+            <svg viewbox="0 0 300 400">
+                <use xlink:href="#${_ID}" />
+                <use xlink:href="#back" />
+            </svg>
+        </div>
+        `)
     })
 }
 
