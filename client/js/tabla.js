@@ -1,6 +1,6 @@
 import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-function makeCards(sprite) {
+function generateRandomDeck(sprite) {
 
     const _SPRITE = sprite || null
     if (!_SPRITE) {
@@ -8,20 +8,25 @@ function makeCards(sprite) {
         return
     }
 
-    const CARDS = _SPRITE.querySelectorAll('svg > symbol[id*="-"]')
-    CARDS.forEach(card => {
+    const _CARDS = Array.prototype.slice.call(document.querySelectorAll('svg > symbol[id*="-"]'))
 
-        const _ID = card.getAttribute('id').toLowerCase()
+    while (_CARDS.length > 0) {
+
+        const _I = parseInt(Math.random() * _CARDS.length)
+        const _CARD = _CARDS[_I]
+        const _ID = _CARD.getAttribute('id')
 
         _SPRITE.insertAdjacentHTML('afterend', `
-        <div class="card" id="${_ID.replace('-','')}">
-            <svg viewbox="0 0 300 400">
-                <use xlink:href="#${_ID}" />
-                <use xlink:href="#back" />
-            </svg>
-        </div>
+            <div class="card" id="${_ID.replace('-','')}">
+                <svg viewbox="0 0 300 400">
+                    <use xlink:href="#${_ID}" />
+                    <use xlink:href="#back" />
+                </svg>
+            </div>
         `)
-    })
+
+        _CARDS.splice(_I, 1)
+    }
 }
 
 window.addEventListener('message', event => {
@@ -29,6 +34,6 @@ window.addEventListener('message', event => {
     if (event.data === 'cardSpriteReady') {
         const _SPRITE = document.getElementById('cards-sprite')
         _SPRITE.insertAdjacentHTML('afterbegin', getSVGSprite())
-        makeCards(_SPRITE)
+        generateRandomDeck(_SPRITE)
     }
 }, false)
