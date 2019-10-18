@@ -15,8 +15,9 @@ function generateRandomDeck(sprite) {
         const _I = parseInt(Math.random() * _CARDS.length)
         const _CARD = _CARDS[_I]
         const _ID = _CARD.getAttribute('id')
+        const _DRAW_PILE = document.getElementById('draw-pile')
 
-        _SPRITE.insertAdjacentHTML('afterend', `
+        _DRAW_PILE.insertAdjacentHTML('beforeend', `
             <div class="card" id="${_ID.replace('-','')}">
                 <svg viewbox="0 0 300 400">
                     <use xlink:href="#${_ID}" />

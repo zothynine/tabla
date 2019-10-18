@@ -1,6 +1,7 @@
 :root {
 	--tablebg: #006600;
 	--tint: #333;
+	--card-width: calc(4rem + 3vw);
 }
 
 html {
@@ -16,4 +17,13 @@ body {
 
 [id='cards-sprite'] {
 	display: none;
+}
+
+[id='draw-pile'] {
+	position: relative;
+}
+
+[id='draw-pile'] .card + .card {
+	top: 2px;
+	left: 2px;
 }

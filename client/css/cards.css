@@ -1,7 +1,6 @@
 .card {
     /* --width: 3rem; */
-    --width: calc(4rem + 3vw);
-	width: var(--width);
+	width: var(--card-width);
     background-color: #eee;
     border-color: #fff transparent transparent #fff;
     border-radius: 5px;
@@ -11,10 +10,13 @@
     cursor: pointer;
     float: left;
     height: calc(var(--width) * 1.3333333333);
+    left: 0;
     margin: 5px;
+    position: absolute;
+    top: 0;
 }
 
-.card use + use {
+.card use:first-child {
     display: none;
 }
 
