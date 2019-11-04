@@ -43,3 +43,7 @@ body {
 .draw-pile .card:last-child {
 	transform: translate(2px, 2px)
 }
+
+.draw-pile .card use.face {
+    display: none;
+}

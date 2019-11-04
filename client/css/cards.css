@@ -14,10 +14,6 @@
     top: 0;
 }
 
-.card use:first-child {
-    display: none;
-}
-
 .card svg {
     fill: transparent;
 }

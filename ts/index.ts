@@ -20,8 +20,8 @@ function generateRandomDeck(sprite: HTMLElement): void {
         _DRAW_PILE.insertAdjacentHTML('beforeend', `
             <div class="card" id="${_ID.replace('-','')}">
                 <svg viewbox="0 0 300 400">
-                    <use xlink:href="#${_ID}" />
-                    <use xlink:href="#back" />
+                    <use class="face" xlink:href="#${_ID}" />
+                    <use class="back" xlink:href="#back" />
                 </svg>
             </div>
         `)
