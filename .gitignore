@@ -4,3 +4,4 @@ sass-cache/
 *.swo
 node_modules
 *.map
+client/js/app/

@@ -1,6 +1,6 @@
 import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-function generateRandomDeck(sprite: HTMLElement) {
+function generateRandomDeck(sprite: HTMLElement): void {
 
     const _SPRITE: HTMLElement = sprite || null
     if (!_SPRITE) {
@@ -15,7 +15,7 @@ function generateRandomDeck(sprite: HTMLElement) {
         const _I: number = Math.floor(Math.random() * _CARDS.length)
         const _CARD: HTMLElement = _CARDS[_I]
         const _ID: string = _CARD.getAttribute('id')
-        const _DRAW_PILE: HTMLElement = document.getElementById('draw-pile')
+        const _DRAW_PILE: HTMLElement = document.getElementById('js-draw-pile')
 
         _DRAW_PILE.insertAdjacentHTML('beforeend', `
             <div class="card" id="${_ID.replace('-','')}">
@@ -33,7 +33,7 @@ function generateRandomDeck(sprite: HTMLElement) {
 window.addEventListener('message', event => {
 
     if (event.data === 'cardSpriteReady') {
-        const _SPRITE: HTMLElement = document.getElementById('cards-sprite')
+        const _SPRITE: HTMLElement = document.getElementById('js-cards-sprite')
         _SPRITE.insertAdjacentHTML('afterbegin', getSVGSprite())
         generateRandomDeck(_SPRITE)
     }
