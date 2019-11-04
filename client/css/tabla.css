@@ -15,15 +15,31 @@ body {
 	padding: 0;
 }
 
-[id='cards-sprite'] {
+.cards-sprite {
 	display: none;
 }
 
-[id='draw-pile'] {
-	position: relative;
+.draw-pile {
+	height: calc(var(--card-width) * 1.333333);
+	left: 2rem;
+	position: absolute;
+	top: 2rem;
+	width: var(--card-width);
+
 }
 
-[id='draw-pile'] .card + .card {
-	top: 2px;
-	left: 2px;
+.draw-pile::before {
+	border: 1px dashed #ececec;
+	bottom: 3px;
+	box-sizing: border-box;
+	content: '';
+	display: block;
+	left: 3px;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+.draw-pile .card:last-child {
+	transform: translate(2px, 2px)
 }

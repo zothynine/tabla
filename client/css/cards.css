@@ -1,8 +1,7 @@
 .card {
-    /* --width: 3rem; */
 	width: var(--card-width);
     background-color: #eee;
-    border-color: #fff transparent transparent #fff;
+    border-color: #fff #333 #333 #fff;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
@@ -11,7 +10,6 @@
     float: left;
     height: calc(var(--width) * 1.3333333333);
     left: 0;
-    margin: 5px;
     position: absolute;
     top: 0;
 }
@@ -19,10 +17,6 @@
 .card use:first-child {
     display: none;
 }
-
-/* .card + .card {
-    transform: translate(20px,-80px);
-} */
 
 .card svg {
     fill: transparent;
