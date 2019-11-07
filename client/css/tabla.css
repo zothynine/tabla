@@ -29,6 +29,32 @@ body {
 
 }
 
+[data-table-area='draw pile'] .card:last-child {
+	transform: translate(2px, 2px)
+}
+
+[data-table-area='draw pile'] .card use.face {
+    display: none;
+}
+
+[data-table-area='hand'] {
+	background-color: rgba(0,0,0,.25);
+	box-sizing: border-box;
+	bottom: 0;
+	min-height: var(--card-height);
+	padding: 1.6rem;
+	position: absolute;
+	width: 100%;
+}
+
+[data-table-area='hand'] div {
+	display: inline-block;
+	height: var(--card-height);
+	margin: 0 3px;
+	position: relative;
+	width: var(--card-width);
+}
+
 [data-table-area='draw pile']::before {
 	border: 1px dashed #ececec;
 	bottom: 3px;
@@ -41,19 +67,10 @@ body {
 	top: 3px;
 }
 
-[data-table-area='draw pile'] .card:last-child {
-	transform: translate(2px, 2px)
+[data-table-area='hand'] .card use.face {
+    display: initial;
 }
 
-[data-table-area='draw pile'] .card use.face {
+[data-table-area='hand'] .card use.back {
     display: none;
-}
-
-[data-table-area='hand'] {
-	background-color: rgba(0,0,0,.25);
-	bottom: 0;
-	height: var(--card-height);
-	padding: 1.6rem;
-	position: absolute;
-	width: 100%;
 }
