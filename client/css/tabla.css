@@ -19,7 +19,7 @@ body {
 	display: none;
 }
 
-.draw-pile {
+[data-table-pos='draw pile'] {
 	height: calc(var(--card-width) * 1.333333);
 	left: 2rem;
 	position: absolute;
@@ -28,7 +28,7 @@ body {
 
 }
 
-.draw-pile::before {
+[data-table-pos='draw pile']::before {
 	border: 1px dashed #ececec;
 	bottom: 3px;
 	box-sizing: border-box;
@@ -40,10 +40,10 @@ body {
 	top: 3px;
 }
 
-.draw-pile .card:last-child {
+[data-table-pos='draw pile'] .card:last-child {
 	transform: translate(2px, 2px)
 }
 
-.draw-pile .card use.face {
+[data-table-pos='draw pile'] .card use.face {
     display: none;
 }
