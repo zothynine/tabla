@@ -1,22 +1,21 @@
 import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-function getCardTablePositon(card: HTMLElement): HTMLElement {
+function getCardTablePositon(card: HTMLElement): void {
 
-    let _tablePosition: HTMLElement;
-
-    console.log( card, card.closest('.js-pos') );
+    let _tablePosition: HTMLElement
+    console.log( card, card.closest('.js-pos') )
 }
 
 function onCardClickOrTab(e: Event): void {
 
-    const _TARGET = e.target
-    const _CARD = _TARGET.closest('.card')
+    const _TARGET: HTMLElement = (e.target as HTMLElement)
+    const _CARD: HTMLElement = _TARGET.closest('.card')
     getCardTablePositon(_CARD)
 }
 
 function generateRandomDeck(sprite: HTMLElement): void {
 
-    const _SPRITE: HTMLElement = sprite || null
+    const _SPRITE: HTMLElement = sprite
     if (!_SPRITE) {
         console.error('no cards sprite loaded')
         return
