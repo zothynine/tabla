@@ -1,16 +1,16 @@
 import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-function getCardTablePositon(card: HTMLElement): void {
+function getCardTablePositon(card: HTMLElement): String {
 
     let _tablePosition: HTMLElement
-    console.log( card, card.closest('.js-pos') )
+    return card.closest('.js-pos').getAttribute('data-table-pos')
 }
 
 function onCardClickOrTab(e: Event): void {
 
     const _TARGET: HTMLElement = (e.target as HTMLElement)
     const _CARD: HTMLElement = _TARGET.closest('.card')
-    getCardTablePositon(_CARD)
+    console.log( getCardTablePositon(_CARD) )
 }
 
 function generateRandomDeck(sprite: HTMLElement): void {
@@ -22,7 +22,7 @@ function generateRandomDeck(sprite: HTMLElement): void {
     }
 
     const _CARDS: Array<HTMLElement> = Array.prototype.slice.call(_SPRITE.querySelectorAll('svg > symbol[id*="-"]'))
-    const _DRAW_PILE: HTMLElement = document.getElementById('js-draw-pile')
+    const _DRAW_PILE: HTMLElement = document.querySelector('.js-draw-pile')
 
     while (_CARDS.length > 0) {
 
@@ -50,7 +50,7 @@ function generateRandomDeck(sprite: HTMLElement): void {
 window.addEventListener('message', event => {
 
     if (event.data === 'cardSpriteReady') {
-        const _SPRITE: HTMLElement = document.getElementById('js-cards-sprite')
+        const _SPRITE: HTMLElement = document.querySelector('.js-cards-sprite')
         _SPRITE.insertAdjacentHTML('afterbegin', getSVGSprite())
         generateRandomDeck(_SPRITE)
     }
