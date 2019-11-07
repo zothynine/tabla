@@ -2,6 +2,7 @@
 	--tablebg: #006600;
 	--tint: #333;
 	--card-width: calc(4rem + 3vw);
+	--card-height: calc(var(--card-width) * 1.333333);
 }
 
 html {
@@ -20,7 +21,7 @@ body {
 }
 
 [data-table-area='draw pile'] {
-	height: calc(var(--card-width) * 1.333333);
+	height: var(--card-height);
 	left: 2rem;
 	position: absolute;
 	top: 2rem;
@@ -46,4 +47,13 @@ body {
 
 [data-table-area='draw pile'] .card use.face {
     display: none;
+}
+
+[data-table-area='hand'] {
+	background-color: rgba(0,0,0,.25);
+	bottom: 0;
+	height: var(--card-height);
+	padding: 1.6rem;
+	position: absolute;
+	width: 100%;
 }
