@@ -1,16 +1,16 @@
 import { get as getSVGSprite } from './cards-svg-sprite.js'
 
-function getCardTablePositon(card: HTMLElement): String {
+function getTableArea(card: HTMLElement): String {
 
     let _tablePosition: HTMLElement
-    return card.closest('.js-pos').getAttribute('data-table-pos')
+    return card.closest('.js-pos').getAttribute('data-table-area')
 }
 
 function onCardClickOrTab(e: Event): void {
 
     const _TARGET: HTMLElement = (e.target as HTMLElement)
     const _CARD: HTMLElement = _TARGET.closest('.card')
-    console.log( getCardTablePositon(_CARD) )
+    console.log( getTableArea(_CARD) )
 }
 
 function generateRandomDeck(sprite: HTMLElement): void {
