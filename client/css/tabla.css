@@ -41,16 +41,17 @@ body {
 	background-color: rgba(0,0,0,.25);
 	box-sizing: border-box;
 	bottom: 0;
-	min-height: var(--card-height);
+	min-height: calc(var(--card-height) + 3.6rem);
 	padding: 1.6rem;
 	position: absolute;
 	width: 100%;
 }
 
-[data-table-area='hand'] div {
+[data-table-area='hand'] .placeholder,
+[data-table-area='hand'] .card {
 	display: inline-block;
 	height: var(--card-height);
-	margin: 0 3px;
+	margin: 3px;
 	position: relative;
 	width: var(--card-width);
 }

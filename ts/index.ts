@@ -9,19 +9,20 @@ function getTableArea(card: HTMLElement): String {
 function moveCard(card: HTMLElement, targetAreaName: String): void {
 
     if (!card || !targetAreaName) return
-    const _PLACEHOLDER_STR: String = '<div></div>'
+    const _PLACEHOLDER_STR: String = '<div class="placeholder"></div>'
     const _TARGET_AREA: HTMLElement = document.querySelector(`[data-table-area='${targetAreaName}']`)
     _TARGET_AREA.insertAdjacentHTML('beforeend', _PLACEHOLDER_STR)
     const _PLACEHOLDER: HTMLElement = _TARGET_AREA.querySelector('div:last-child')
-    const _CURRENT_POS: HTMLElement = document.querySelector(`[data-table-area='${getTableArea(card)}']`)
-    const _CURRENT_X: Number = _CURRENT_POS.getBoundingClientRect().left
-    const _CURRENT_Y: Number = _CURRENT_POS.getBoundingClientRect().top
-    const _TARGET_POS: HTMLElement = _TARGET_AREA.querySelector(`div:last-child`)
-    const _TARGET_X: Number = _TARGET_POS.getBoundingClientRect().left
-    const _TARGET_Y: Number = _TARGET_POS.getBoundingClientRect().top
+    const _SOURCE_PARENT: HTMLElement = document.querySelector(`[data-table-area='${getTableArea(card)}']`)
+    const _SOURCE_X: Number = _SOURCE_PARENT.getBoundingClientRect().left
+    const _SOURCE_Y: Number = _SOURCE_PARENT.getBoundingClientRect().top
+    const _TARGET_PARENT: HTMLElement = _TARGET_AREA.querySelector(`div:last-child`)
+    const _TARGET_X: Number = _TARGET_PARENT.getBoundingClientRect().left
+    const _TARGET_Y: Number = _TARGET_PARENT.getBoundingClientRect().top
 
+    _SOURCE_PARENT.classList.add('clicklock')
     document.body.insertAdjacentElement('afterbegin', card);
-    card.setAttribute('style', `top: ${_CURRENT_Y}px; left: ${_CURRENT_X}px; z-index: 1;`)
+    card.setAttribute('style', `top: ${_SOURCE_Y}px; left: ${_SOURCE_X}px; z-index: 1;`)
     setTimeout(() => {
         card.style.top = _TARGET_Y + 'px';
         card.style.left = _TARGET_X + 'px';
@@ -31,13 +32,15 @@ function moveCard(card: HTMLElement, targetAreaName: String): void {
         _TARGET_AREA.removeChild(_PLACEHOLDER)
         _TARGET_AREA.insertAdjacentElement('beforeend', card)
         card.removeAttribute('style')
+        _SOURCE_PARENT.classList.remove('clicklock')
     }, 1000);
 }
 
 function onCardClickOrTab(e: Event): void {
 
-    const _TARGET: HTMLElement = (e.target as HTMLElement)
-    const _CARD: HTMLElement = _TARGET.closest('.card')
+    const _EV_TARGET: HTMLElement = (e.target as HTMLElement)
+    if (_EV_TARGET.classList.contains('clicklock')) return;
+    const _CARD: HTMLElement = _EV_TARGET.closest('.card')
     moveCard(_CARD, 'hand')
 }
 
