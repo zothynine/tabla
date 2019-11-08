@@ -9,7 +9,7 @@ function getTableArea(card: HTMLElement): String {
 function moveCard(card: HTMLElement, targetAreaName: String): void {
 
     if (!card || !targetAreaName) return
-    const _PLACEHOLDER_STR: String = '<div class="placeholder"></div>'
+    const _PLACEHOLDER_STR: string = '<div class="placeholder"></div>'
     const _TARGET_AREA: HTMLElement = document.querySelector(`[data-table-area='${targetAreaName}']`)
     _TARGET_AREA.insertAdjacentHTML('beforeend', _PLACEHOLDER_STR)
     const _PLACEHOLDER: HTMLElement = _TARGET_AREA.querySelector('div:last-child')
