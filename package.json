@@ -1,0 +1,23 @@
+{
+  "name": "tabla",
+  "version": "1.0.0",
+  "description": "tabla =====",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zothynine/tabla.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/zothynine/tabla/issues"
+  },
+  "homepage": "https://gitlab.com/zothynine/tabla#readme"
+}
