@@ -1,0 +1,29 @@
+{
+  "name": "tabla",
+  "version": "1.0.0",
+  "description": "tabla =====",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zothynine/tabla.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/zothynine/tabla/issues"
+  },
+  "homepage": "https://gitlab.com/zothynine/tabla#readme",
+  "devDependencies": {
+    "sass": "^1.23.3",
+    "typescript": "^3.7.2"
+  }
+}
