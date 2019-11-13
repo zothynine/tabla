@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,8 @@
   "bugs": {
     "url": "https://gitlab.com/zothynine/tabla/issues"
   },
-  "homepage": "https://gitlab.com/zothynine/tabla#readme"
+  "homepage": "https://gitlab.com/zothynine/tabla#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
 }
