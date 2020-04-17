@@ -23,6 +23,7 @@
   },
   "homepage": "https://gitlab.com/zothynine/tabla#readme",
   "devDependencies": {
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.23.3",
     "typescript": "^3.7.2"
   }
