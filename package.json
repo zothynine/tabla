@@ -6,25 +6,25 @@
   "directories": {
     "doc": "docs"
   },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0"
+  },
   "scripts": {
-    "dev": "parcel index.html --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/zothynine/tabla.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Mario Zoth",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/zothynine/tabla/issues"
   },
-  "homepage": "https://gitlab.com/zothynine/tabla#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.23.3",
-    "typescript": "^3.7.2"
-  }
+  "homepage": "https://gitlab.com/zothynine/tabla#readme"
 }

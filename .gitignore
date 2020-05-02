@@ -1,9 +1,8 @@
 .cache
+.DS_Store
 sass-cache/
 *~
 *.swp
 *.swo
 node_modules
-*.css
 *.map
-dist
